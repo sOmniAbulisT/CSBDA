@@ -1,3 +1,4 @@
 *.log
 password.txt
 *. Rhistory
+*.__pycache__
