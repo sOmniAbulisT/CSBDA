@@ -40,3 +40,20 @@ a1_q2 <- function(input) {
 input_vec <- c(10, 5, 2, 8, 4)
 print(a1_q2(input_vec))
 # Expected output: 15 3 16 2
+
+# ==========================================
+# Question 3: Alphabet Repeater (R)
+# Note: R has built-in 'letters' vector (1-based)
+# ==========================================
+
+a1_q3 <- function(char, rep) {
+  target <- letters[char]
+  answer <- rep(target, times = rep) |>
+    paste0(collapse = "")
+  return(answer)
+}
+
+# --- Test ---
+print(a1_q3(1, 5))   # [1] "aaaaa"
+print(a1_q3(26, 2))  # [1] "zz"
+
