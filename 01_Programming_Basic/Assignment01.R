@@ -78,3 +78,29 @@ a1_q4 <- function(numbers) {
 my_vec <- c(1, 2, 3, 4, 5)
 print(a1_q4(my_vec))
 # Expected output: $max [1] 5  $min [1] 1  $sum [1] 15
+
+# ==========================================
+# Question 5: Even/Odd Filter (R)
+# Logic: Vectorized filtering is more R-like
+# ==========================================
+
+a1_q5 <- function(lower, upper, is_even) {
+  answer <- c()
+  numbers <- ceiling(lower):floor(upper)
+  for(i in seq_along(numbers)){
+    if(is_even){
+      if(numbers[i] %% 2 == 0){
+        answer <- c(answer, numbers[i])
+      }
+    }else{
+      if(numbers[i] %% 2 != 0){
+        answer <- c(answer, numbers[i])
+      }
+    }
+  }
+  return(answer)
+}
+
+# --- Test ---
+print(a1_q5(lower=11, upper=22, is_even=TRUE))
+# Expected output: 12 14 16 18 20 22
