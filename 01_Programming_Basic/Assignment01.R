@@ -57,3 +57,24 @@ a1_q3 <- function(char, rep) {
 print(a1_q3(1, 5))   # [1] "aaaaa"
 print(a1_q3(26, 2))  # [1] "zz"
 
+# ==========================================
+# Question 4: Max, Min, and Manual Sum (R)
+# Restriction: NO sum() function allowed
+# Output: A list with names: max, min, sum
+# ==========================================
+
+a1_q4 <- function(numbers) {
+  max_value <- max(numbers)
+  min_value <- min(numbers)
+  sum_value <- 0
+  for(i in seq_len(length(numbers))){
+    sum_value <- sum_value + numbers[i]
+  }
+  answer <- list(max = max_value, min = min_value, sum = sum_value)
+  return(answer)
+}
+
+# --- Test ---
+my_vec <- c(1, 2, 3, 4, 5)
+print(a1_q4(my_vec))
+# Expected output: $max [1] 5  $min [1] 1  $sum [1] 15
