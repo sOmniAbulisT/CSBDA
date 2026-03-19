@@ -21,6 +21,6 @@ fundamental programming, Linux environments, and data managment tailored for bio
 | **Module 1** | **Programming Basics (R/Python)** | ✅ | [`/01_Programming_Basic`](./01_Programming_Basic/) |
 | **Module 2** | **Command Line Interface (I)** | 🏗️ | [`/02_Command_Line`](./02_Command_Line/) |
 | **Module 3** | **Version Control with Git** | ✅ | [`/03_Version_Control`](./03_Version_Control/) |
-| **Module 4** | **Relational Databases (MySQL)** | 📅 | (Upcoming) |
+| **Module 4** | **Databases (MySQL)** | 📅 | (Upcoming) |
 
 ---
