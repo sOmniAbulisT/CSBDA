@@ -1,7 +1,7 @@
-# Computaional Skills for Biological Data Analysis (CSBDA)
+# Computational Skills for Biological Data Analysis (CSBDA)
 
 This repository serves as a comprehensive record of my learning journey in the **CSBDA** course (Spring 2026). It documents my proficiency in 
-fundamental programming, Linux environments, and data managment tailored for biological research.
+fundamental programming, Linux environments, and data management tailored for biological research.
 
 ---
 
