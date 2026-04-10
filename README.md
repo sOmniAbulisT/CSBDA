@@ -21,6 +21,6 @@ fundamental programming, Linux environments, and data management tailored for bi
 | **Module 1** | **Programming Basics (R/Python)** | :white_check_mark: | [`/01_Programming_Basic`](./01_Programming_Basic/) |
 | **Module 2** | **Command Line Interface (I)** | :white_check_mark: | [`/02_Command_Line`](./02_Command_Line/) |
 | **Module 3** | **Version Control with Git** | :white_check_mark: | [`/03_Version_Control`](./03_Version_Control/) |
-| **Module 4** | **Databases (MySQL)** | :calendar: | (Upcoming) |
+| **Module 4** | **Databases (MySQL)** | :calendar: | [`/04_Data_Base`](./04_Data_Base/) |
 
 ---
