@@ -1,7 +1,7 @@
 -- Combines rows from two or more tables in databases
 SELECT * FROM Seed_Info 
 	JOIN Company_Info 
-	ON Seed_Info.Company_id = Company_Info = Company_ID; -- use Company_ID/Comapny_id to join 
+	ON Seed_Info.Company_id = Company_Info.Company_ID; -- use Company_ID/Comapny_id to join 
 
 -- Combines rows from two or more tables in databases with target columns
 SELECT Hybrid_name, Maturity, Company_name, Parent_name
@@ -19,3 +19,25 @@ ON State_Info.State_ID = Farm_Info.State_ID;
 SELECT DISTINCT Company_Info.Parent_company
 FROM Seed_Info JOIN Company_Info
 ON Seed_Info.Company_id = Company_Info.Company_ID; -- Remove duplicate data, leaving only the unique ones
+
+-- Aggregate function: LIMIT
+SELECT Seed_ID, Maturity FROM `Seed_Info` LIMIT 5; 
+
+SELECT `Seed_ID`, Maturity FROM `Seed_Info` LIMIT 3 OFFSET 2; -- OR
+SELECT Seed_ID, Maturity FROM `Seed_Info` LIMIT 2, 3;
+
+-- Aggregate function: ORDER
+SELECT Hybrid_name, Maturity 
+	FROM `Seed_Info`
+	ORDER BY `Maturity` ASC; -- ascending order
+
+SELECT Hybrid_name, Maturity
+	FROM `Seed_Info`
+	ORDER BY `Maturity` DESC; -- decreasing order 
+
+SELECT * FROM `Seed_Info`
+	ORDER BY `Company_id`, `Maturity` DESC; -- sort by Company_id first (ascending), then decreasing by Maturity
+
+SELECT * FROM `Seed_Info`
+	ORDER BY `Company_id` DESC, `Maturity` ASC; -- decreasing order by Company_id first, then ascending order by Maturity
+
