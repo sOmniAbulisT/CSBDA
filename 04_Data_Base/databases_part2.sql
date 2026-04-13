@@ -16,5 +16,6 @@ SELECT COUNT(*) FROM State_Info JOIN Farm_Info
 ON State_Info.State_ID = Farm_Info.State_ID; 
 
 -- Aggregate function: DISTINCT
-
-
+SELECT DISTINCT Company_Info.Parent_company
+FROM Seed_Info JOIN Company_Info
+ON Seed_Info.Company_id = Company_Info.Company_ID; -- Remove duplicate data, leaving only the unique ones
