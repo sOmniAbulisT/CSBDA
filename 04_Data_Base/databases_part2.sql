@@ -41,3 +41,33 @@ SELECT * FROM `Seed_Info`
 SELECT * FROM `Seed_Info`
 	ORDER BY `Company_id` DESC, `Maturity` ASC; -- decreasing order by Company_id first, then ascending order by Maturity
 
+-- Sorting by custom order 
+SELECT * FROM `State_Info`
+	ORDER BY FIELD(
+		`State_name`, 
+		'California', 'Texas', 'Kansas', 
+		'Illinois', 'Florida'
+	); 
+
+SELECT * FROM `State_Info`
+	ORDER BY FIELD(
+		`State_name`, 
+		'USA', 'California', 'Texas', 'Flordia'
+	);
+
+SELECT * FROM `Seed_Info`
+	ORDER BY `Company_id` DESC, `Maturity` ASC
+	LIMIT 7;
+
+SELECT * FROM `Seed_Info`
+	WHERE (`Maturity` >= 111 AND `Company_id` = 2)
+		OR (`Maturity` <= 109 AND `Company_id` = 1)
+	ORDER BY `Company_id` DESC, `Maturity` ASC; 
+
+SELECT Hybrid_name, `Company_Info`.Company_name, `Company_Info`.Company_id, Maturity
+	FROM `Seed_Info` JOIN `Company_Info` ON `Seed_Info`.`Company_id`=`Company_Info`.`Company_ID`
+	WHERE (`Maturity` >= 111 AND `Company_name` = 'Pioneer') 
+		OR (`Maturity` <= 109 AND `Company_name` = 'Dekalb')
+	ORDER BY `Company_Info`.Company_id DESC, `Maturity` ASC;
+
+
