@@ -22,5 +22,6 @@ fundamental programming, Linux environments, and data management tailored for bi
 | **Module 2** | **Command Line Interface (I)** | :white_check_mark: | [`/02_Command_Line`](./02_Command_Line/) |
 | **Module 3** | **Version Control with Git** | :white_check_mark: | [`/03_Version_Control`](./03_Version_Control/) |
 | **Module 4** | **Databases (MySQL)** | :white_check_mark: | [`/04_Data_Base`](./04_Data_Base/) |
+| **Module 5** | **Programming**       | :calendar:         | [`/05_Programming`](./05_Programming/) |
 
 ---
