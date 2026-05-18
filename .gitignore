@@ -2,3 +2,4 @@
 password.txt
 *. Rhistory
 *.__pycache__
+*.venv
