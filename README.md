@@ -25,3 +25,5 @@ fundamental programming, Linux environments, and data management tailored for bi
 | **Module 5** | **Programming**       | :calendar:         | [`/05_Programming`](./05_Programming/) |
 
 ---
+
+**[Click here to view the complete Final Project Repository](https://github.com/sOmniAbulisT/Automated_Decision_Engine_for_Time-Constrained_Selection)**
